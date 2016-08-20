@@ -177,6 +177,7 @@
             // 
             this.TitleTextBox.Location = new System.Drawing.Point(15, 37);
             this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(100, 21);
             this.TitleTextBox.TabIndex = 0;
             // 
@@ -184,6 +185,7 @@
             // 
             this.CategoryTextBox.Location = new System.Drawing.Point(15, 80);
             this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(100, 21);
             this.CategoryTextBox.TabIndex = 1;
             // 
@@ -226,6 +228,7 @@
             // 
             this.CostTextBox.Location = new System.Drawing.Point(79, 16);
             this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(100, 21);
             this.CostTextBox.TabIndex = 1;
             // 
@@ -260,6 +263,7 @@
             // 
             this.SubTotalTextBox.Location = new System.Drawing.Point(79, 95);
             this.SubTotalTextBox.Name = "SubTotalTextBox";
+            this.SubTotalTextBox.ReadOnly = true;
             this.SubTotalTextBox.Size = new System.Drawing.Size(100, 21);
             this.SubTotalTextBox.TabIndex = 5;
             // 
@@ -267,6 +271,7 @@
             // 
             this.SaleTaxTextBox.Location = new System.Drawing.Point(79, 139);
             this.SaleTaxTextBox.Name = "SaleTaxTextBox";
+            this.SaleTaxTextBox.ReadOnly = true;
             this.SaleTaxTextBox.Size = new System.Drawing.Size(100, 21);
             this.SaleTaxTextBox.TabIndex = 6;
             // 
@@ -274,6 +279,7 @@
             // 
             this.GrandTotalTextBox.Location = new System.Drawing.Point(79, 188);
             this.GrandTotalTextBox.Name = "GrandTotalTextBox";
+            this.GrandTotalTextBox.ReadOnly = true;
             this.GrandTotalTextBox.Size = new System.Drawing.Size(100, 21);
             this.GrandTotalTextBox.TabIndex = 7;
             // 
@@ -291,6 +297,7 @@
             // 
             this.DVDTextBox.Location = new System.Drawing.Point(79, 62);
             this.DVDTextBox.Name = "DVDTextBox";
+            this.DVDTextBox.ReadOnly = true;
             this.DVDTextBox.Size = new System.Drawing.Size(100, 21);
             this.DVDTextBox.TabIndex = 9;
             this.DVDTextBox.Text = "10.00";
@@ -322,6 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 448);
+            this.ControlBox = false;
             this.Controls.Add(this.Back);
             this.Controls.Add(this.YourOrder);
             this.Controls.Add(this.MovieSelected);
@@ -329,7 +337,11 @@
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Order_Form";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Order Form";
             this.Load += new System.EventHandler(this.Order_Form_Load);
             this.menuStrip1.ResumeLayout(false);

@@ -67,7 +67,7 @@
             "The Roommate",
             "The Way Back",
             "Waiting for Forever"});
-            this.SelectBox.Location = new System.Drawing.Point(12, 22);
+            this.SelectBox.Location = new System.Drawing.Point(12, 36);
             this.SelectBox.Name = "SelectBox";
             this.SelectBox.Size = new System.Drawing.Size(143, 28);
             this.SelectBox.Sorted = true;
@@ -90,6 +90,7 @@
             this.TitleTextBox.Enabled = false;
             this.TitleTextBox.Location = new System.Drawing.Point(6, 38);
             this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(100, 21);
             this.TitleTextBox.TabIndex = 2;
             // 
@@ -116,6 +117,7 @@
             this.CategoryTextBox.Enabled = false;
             this.CategoryTextBox.Location = new System.Drawing.Point(6, 79);
             this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(100, 21);
             this.CategoryTextBox.TabIndex = 5;
             // 
@@ -124,6 +126,7 @@
             this.CostTextBox.Enabled = false;
             this.CostTextBox.Location = new System.Drawing.Point(6, 118);
             this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(100, 21);
             this.CostTextBox.TabIndex = 6;
             // 
@@ -131,7 +134,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(33, 190);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 129);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 202);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -144,9 +147,9 @@
             this.groupBox1.Controls.Add(this.Category);
             this.groupBox1.Controls.Add(this.Cost);
             this.groupBox1.Controls.Add(this.CategoryTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(22, 78);
+            this.groupBox1.Location = new System.Drawing.Point(173, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(327, 364);
+            this.groupBox1.Size = new System.Drawing.Size(258, 411);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Your Selection";
@@ -168,10 +171,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(458, 500);
+            this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.SelectBox);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SelectionForm";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Selection Form";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

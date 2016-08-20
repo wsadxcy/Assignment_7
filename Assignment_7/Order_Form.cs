@@ -33,7 +33,7 @@ namespace Assignment_7
             this.Hide();
             Stream_Form streamform = new Stream_Form();
             streamform.label3.Text = this.TitleTextBox.Text + " will be begin streaming shortly.";
-            streamform.label2.Text = "Your cridit card will be charged" + this.GrandTotalTextBox.Text;
+            streamform.label2.Text = "Your cridit card will be charged " + this.GrandTotalTextBox.Text;
             streamform.Show();
         }
 

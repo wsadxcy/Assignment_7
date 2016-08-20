@@ -36,7 +36,7 @@
             // 
             // OK
             // 
-            this.OK.Location = new System.Drawing.Point(77, 288);
+            this.OK.Location = new System.Drawing.Point(77, 251);
             this.OK.Name = "OK";
             this.OK.Size = new System.Drawing.Size(75, 23);
             this.OK.TabIndex = 0;
@@ -75,12 +75,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 325);
+            this.ClientSize = new System.Drawing.Size(275, 287);
+            this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.OK);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Stream_Form";
+            this.ShowIcon = false;
             this.Text = "Stream_Form";
             this.Load += new System.EventHandler(this.Stream_Form_Load);
             this.ResumeLayout(false);
