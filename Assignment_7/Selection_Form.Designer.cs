@@ -37,6 +37,7 @@
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -150,12 +151,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Your Selection";
             // 
+            // NextButton
+            // 
+            this.NextButton.Enabled = false;
+            this.NextButton.Location = new System.Drawing.Point(341, 462);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(75, 23);
+            this.NextButton.TabIndex = 9;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(458, 500);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.SelectBox);
             this.Name = "SelectionForm";
@@ -171,13 +184,14 @@
 
         private System.Windows.Forms.ComboBox SelectBox;
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label Category;
         private System.Windows.Forms.Label Cost;
-        private System.Windows.Forms.TextBox CategoryTextBox;
-        private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button NextButton;
+        public System.Windows.Forms.TextBox TitleTextBox;
+        public System.Windows.Forms.TextBox CategoryTextBox;
+        public System.Windows.Forms.TextBox CostTextBox;
     }
 }
 

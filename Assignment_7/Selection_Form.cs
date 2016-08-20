@@ -12,7 +12,8 @@ namespace Assignment_7
 {
     public partial class SelectionForm : Form
     {
-        List<string> MovieDetail = new List<string>();
+        public List<string> MovieDetail = new List<string>();
+        public double Price;
 
 
         private void SelectMovie()
@@ -31,6 +32,8 @@ namespace Assignment_7
         {
             
             _assignCategory();
+            _assignPrice();
+            NextButton.Enabled = true;
 
         }
         private void _assignCategory()
@@ -193,7 +196,52 @@ namespace Assignment_7
             }
         }
 
+        private void addprice()
+        {
+            if (CategoryTextBox.Text == "Comedy")
+            {
+                Price = 1.99;
+            }
+            else if (CategoryTextBox.Text == "Drama")
+            {
+                Price = 1.99;
+            }
+            else if (CategoryTextBox.Text == "Action")
+            {
+                Price = 2.99;
+            }
+            else if (CategoryTextBox.Text == "Sci-Fi")
+            {
+                Price = 2.99;
+            }
+            else if (CategoryTextBox.Text == "Horror")
+            {
+                Price = 2.99;
+            }
+            else if (CategoryTextBox.Text == "Thriller")
+            {
+                Price = 1.99;
+            }
+            else if (CategoryTextBox.Text == "Family")
+            {
+                Price = 0.99;
+            }
+            else if (CategoryTextBox.Text == "New Releases")
+            {
+                Price = 4.99;
+            }
+        }
 
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Order_Form orderform = new Order_Form();
+            orderform.Show();
+            SelectMovie();
+            orderform.TitleTextBox.Text = this.TitleTextBox.Text;
+            orderform.CategoryTextBox.Text = this.CategoryTextBox.Text;
+            orderform.Cost = Price;
+        }
     }
 
     }
