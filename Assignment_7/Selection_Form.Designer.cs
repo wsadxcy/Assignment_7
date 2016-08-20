@@ -56,7 +56,7 @@
             "No Strings Attached",
             "Real Steel",
             "Sanctum",
-            "Season of the Witch",
+            "Seasons of the Witch",
             "The Dilemma",
             "The Eagle",
             "The Green Hornet",
@@ -73,6 +73,7 @@
             this.SelectBox.TabIndex = 0;
             this.SelectBox.Text = "Your Selection";
             this.SelectBox.SelectedIndexChanged += new System.EventHandler(this.SelectBox_SelectedIndexChanged);
+            this.SelectBox.SelectedValueChanged += new System.EventHandler(this.SelectBox_SelectedIndexChanged);
             // 
             // Title
             // 
@@ -85,9 +86,9 @@
             // 
             // TitleTextBox
             // 
+            this.TitleTextBox.Enabled = false;
             this.TitleTextBox.Location = new System.Drawing.Point(6, 38);
             this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(100, 21);
             this.TitleTextBox.TabIndex = 2;
             // 
@@ -111,17 +112,17 @@
             // 
             // CategoryTextBox
             // 
+            this.CategoryTextBox.Enabled = false;
             this.CategoryTextBox.Location = new System.Drawing.Point(6, 79);
             this.CategoryTextBox.Name = "CategoryTextBox";
-            this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(100, 21);
             this.CategoryTextBox.TabIndex = 5;
             // 
             // CostTextBox
             // 
+            this.CostTextBox.Enabled = false;
             this.CostTextBox.Location = new System.Drawing.Point(6, 118);
             this.CostTextBox.Name = "CostTextBox";
-            this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(100, 21);
             this.CostTextBox.TabIndex = 6;
             // 
